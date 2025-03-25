@@ -1,0 +1,102 @@
+[
+  {
+    "playerId": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://i.ibb.co.com/KjzzTqj9/kholi.jpg",
+    "role": "Batsman",
+    "battingType": "Right-handed",
+    "bowlingType": "Right-arm medium",
+    "biddingPrice": 2000000
+  },
+  {
+    "playerId": 2,
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "image": "https://i.ibb.co.com/gMH2Fpzj/Bumrah.jpg",
+    "role": "Bowler",
+    "battingType": "Right-handed",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": 1800000
+  },
+  {
+    "playerId": 3,
+    "name": "Joe Root",
+    "country": "England",
+    "image": "https://i.ibb.co.com/gb9VJK4h/root.jpg",
+    "role": "Batsman",
+    "battingType": "Right-handed",
+    "bowlingType": "Right-arm off-spin",
+    "biddingPrice": 1500000
+  },
+  {
+    "playerId": 4,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "https://i.ibb.co.com/S4Gwzn7D/rashid.jpg",
+    "role": "All-rounder",
+    "battingType": "Right-handed",
+    "bowlingType": "Right-arm leg-spin",
+    "biddingPrice": 1700000
+  },
+  {
+    "playerId": 5,
+    "name": "David Warner",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/CKQppVbr/warner.jpg",
+    "role": "Batsman",
+    "battingType": "Left-handed",
+    "bowlingType": "Right-arm leg-spin",
+    "biddingPrice": 1600000
+  },
+  {
+    "playerId": 6,
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/QvqTQCx2/boult.jpg",
+    "role": "Bowler",
+    "battingType": "Right-handed",
+    "bowlingType": "Left-arm fast-medium",
+    "biddingPrice": 1400000
+  },
+  {
+    "playerId": 7,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/hRGbsD6F/Shakib.jpg",
+    "role": "All-rounder",
+    "battingType": "Left-handed",
+    "bowlingType": "Left-arm orthodox",
+    "biddingPrice": 1300000
+  },
+  {
+    "playerId": 8,
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "image": "https://i.ibb.co.com/KzWVgJcW/deCock.jpg",
+    "role": "Wicketkeeper-Batsman",
+    "battingType": "Left-handed",
+    "bowlingType": null,
+    "biddingPrice": 1200000
+  },
+  {
+    "playerId": 9,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "image": "https://i.ibb.co.com/v4yb430j/babar.jpg",
+    "role": "Batsman",
+    "battingType": "Right-handed",
+    "bowlingType": "Right-arm off-spin",
+    "biddingPrice": 1900000
+  },
+  {
+    "playerId": 10,
+    "name": "Chris Gayle",
+    "country": "West Indies",
+    "image": "https://i.ibb.co.com/Xky7QPMx/gayle.jpg",
+    "role": "Batsman",
+    "battingType": "Right-handed",
+    "bowlingType": "Right-arm off-spin",
+    "biddingPrice": 2100000
+  }
+]
