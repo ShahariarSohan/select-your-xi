@@ -5,7 +5,6 @@ import { FaFlag } from "react-icons/fa6";
 import { FaDollarSign } from "react-icons/fa";
 const Player = ({ player }) => {
   const {
-    playerId,
     name,
     image,
     country,
@@ -20,7 +19,7 @@ const Player = ({ player }) => {
       <div class="card bg-base-100  shadow-sm p-5 space-y-3 border border-base-200">
         <div>
           <img
-            className=" rounded-md"
+            className="  rounded-md"
             src={image}
             alt="player"
             class="rounded-xl"
