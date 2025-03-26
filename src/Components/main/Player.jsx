@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import { IoPerson } from "react-icons/io5";
 import { FaFlag } from "react-icons/fa6";
 import { FaDollarSign } from "react-icons/fa";
-const Player = ({ player }) => {
+const Player = ({ player, handleChoosePlayer }) => {
   const {
+    playerId,
     name,
     image,
     country,
@@ -51,7 +52,12 @@ const Player = ({ player }) => {
             Price: <FaDollarSign />
             <span className="font-bold">{biddingPrice}</span>
           </p>
-          <button className="btn font-normal">Choose Player</button>
+          <button
+            className="btn font-normal"
+            onClick={() => handleChoosePlayer(player, playerId)}
+          >
+            Choose Player
+          </button>
         </div>
       </div>
     </div>
@@ -60,6 +66,7 @@ const Player = ({ player }) => {
 
 Player.propTypes = {
   player: PropTypes.object.isRequired,
+  handleChoosePlayer: PropTypes.func.isRequired,
 };
 
 export default Player;

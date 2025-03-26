@@ -13,7 +13,7 @@ function App() {
     <>
       <Navbar coin={coin}></Navbar>
       <Banner handleClaimCoin={handleClaimCoin}></Banner>
-      <Players></Players>
+      <Players coin={coin}></Players>
     </>
   );
 }
