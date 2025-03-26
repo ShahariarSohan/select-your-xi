@@ -2,7 +2,8 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Player from "./Player";
 import Selected from "./Selected";
-import toast, { Toaster } from "react-hot-toast";
+
+import { ToastContainer, toast } from "react-toastify";
 
 const Players = ({ coin }) => {
   // player data load and set player
@@ -26,10 +27,18 @@ const Players = ({ coin }) => {
       const isExist = choosePlayers.find((player) => player.playerId === id);
       if (!isExist) {
         setChoosePlayers([...choosePlayers, player]);
+        toast.success("Player successfully added");
       } else {
         return toast.error("This player already exist");
       }
     }
+  };
+  const handleRemove = (id) => {
+    const remainingPlayers = choosePlayers.filter(
+      (player) => player.playerId !== id
+    );
+    setChoosePlayers(remainingPlayers);
+    toast.error("Player successfully removed");
   };
   return (
     <div className="container mx-auto my-10">
@@ -65,9 +74,12 @@ const Players = ({ coin }) => {
           ))}
         </div>
       ) : (
-        <Selected choosePlayers={choosePlayers}></Selected>
+        <Selected
+          choosePlayers={choosePlayers}
+          handleRemove={handleRemove}
+        ></Selected>
       )}
-      <Toaster></Toaster>
+      <ToastContainer position="top-center" />
     </div>
   );
 };

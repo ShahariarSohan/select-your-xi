@@ -3,8 +3,8 @@ import { MdDeleteForever } from "react-icons/md";
 import PropTypes from "prop-types";
 import { FaDollarSign } from "react-icons/fa6";
 
-const ShowSelected = ({ choosePlayer }) => {
-  const { image, name, role, biddingPrice } = choosePlayer;
+const ShowSelected = ({ choosePlayer, handleRemove }) => {
+  const { playerId, image, name, role, biddingPrice } = choosePlayer;
   return (
     <div className="flex items-center justify-between p-5 bg-base-200 shadow-sm rounded-md">
       <div className="flex items-center gap-5">
@@ -20,13 +20,19 @@ const ShowSelected = ({ choosePlayer }) => {
           </p>
         </div>
       </div>
-      <button className=" text-red-600 text-3xl">
+      <button
+        className=" text-red-600 text-3xl"
+        onClick={() => handleRemove(playerId)}
+      >
         <MdDeleteForever />
       </button>
     </div>
   );
 };
 
-ShowSelected.propTypes = {};
+ShowSelected.propTypes = {
+  choosePlayer: PropTypes.object.isRequired,
+  handleRemove: PropTypes.func.isRequired,
+};
 
 export default ShowSelected;
