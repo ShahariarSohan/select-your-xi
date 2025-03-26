@@ -77,6 +77,7 @@ const Players = ({ coin }) => {
         <Selected
           choosePlayers={choosePlayers}
           handleRemove={handleRemove}
+          handleComponent={handleComponent}
         ></Selected>
       )}
       <ToastContainer position="top-center" />
