@@ -21,4 +21,6 @@ This is a dream xi cricket team building website.Here you can choose your desire
 
 #### Live links:
 
-- surge : [purring-bear.surge.sh](purring-bear.surge.sh)
+- Vercel :
+- Netlify:
+- surge :[purring-bear.surge.sh](purring-bear.surge.sh)
