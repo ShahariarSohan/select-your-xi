@@ -17,7 +17,7 @@ const Player = ({ player, handleChoosePlayer }) => {
   } = player;
   return (
     <div>
-      <div class="card bg-base-100  shadow-sm p-5 space-y-3 border border-base-200">
+      <div class="card bg-base-100  shadow-sm p-5 space-y-3 border border-base-200 mb-20">
         <div>
           <img
             className="  rounded-md"

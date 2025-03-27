@@ -7,12 +7,12 @@ const Navbar = ({ coin }) => {
         <img src="./images/logo.png" alt="" />
       </div>
       <div>
-        <ul className="grid grid-cols-3 md:grid-cols-5 gap-5 md:gap-0 items-center text-slate-500">
+        <ul className="flex flex-col md:flex-row gap-5 items-center text-slate-500">
           <li>Home</li>
           <li>Fixture</li>
           <li>Teams</li>
           <li>Schedules</li>
-          <button className="btn flex items-center gap-2 col-span-2 md:col-span-1">
+          <button className="btn flex items-center gap-2">
             <p className="text-sm">
               <span className="mr-1">{coin}</span>Coins
             </p>
